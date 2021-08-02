@@ -7,7 +7,8 @@
     "start": "webpack-dev-server --config webpack.dev.config.js",
     "jest": "jest --config jest.config.js",
     "commitizen": "commitizen init cz-conventional-changelog --save-dev --save-exact",
-    "commit": "cz"
+    "commit": "cz",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0"
   },
   "husky": {
     "hooks": {
@@ -24,6 +25,7 @@
     "babel-jest": "^27.0.6",
     "babel-loader": "^8.2.2",
     "commitizen": "^4.2.4",
+    "conventional-changelog-cli": "^2.1.1",
     "css-loader": "^6.1.0",
     "cz": "^1.8.2",
     "cz-conventional-changelog": "^3.3.0",
