@@ -9,7 +9,7 @@
   },
   "husky": {
     "hooks": {
-      "commit-msg": "echo 123"
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   },
   "author": "json",
