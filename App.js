@@ -7,7 +7,7 @@ export default () => {
 
     return (
         <div className="test">
-            {visible && (<div>想显示的内容</div>)}
+            {visible && <div>想显示的内容</div>}
             <div>
                 <button onClick={() => show()}>显示</button>
                 <button onClick={() => hide()}>隐藏</button>
