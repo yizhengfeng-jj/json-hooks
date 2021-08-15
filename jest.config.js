@@ -1,10 +1,3 @@
-/**
- * @file jest config
- * @author chenbo09
- */
-
-const path = require('path');
-
 module.exports = {
     roots: ['<rootDir>/src'],
     setupFiles: [],

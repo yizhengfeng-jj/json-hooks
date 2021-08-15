@@ -6,13 +6,13 @@
   "scripts": {
     "start": "webpack-dev-server --config webpack.dev.config.js",
     "jest": "jest --config jest.config.js",
-    "commitizen": "commitizen init cz-conventional-changelog --save-dev --save-exact",
     "commit": "cz",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0"
   },
   "husky": {
     "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-push": "npm run jest"
     }
   },
   "author": "json",
@@ -35,6 +35,7 @@
     "husky": "^4.3.8",
     "jest": "^27.0.6",
     "less": "^4.1.1",
+    "lodash": "^4.17.21",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-router-dom": "^5.2.0",

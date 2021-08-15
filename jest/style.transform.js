@@ -2,4 +2,4 @@ module.export = {
     process() {
         return '';
     }
-}
+};

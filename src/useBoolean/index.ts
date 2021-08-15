@@ -1,6 +1,12 @@
 import {useState, useEffect, useCallback} from 'react';
 
-export default (initStatus: boolean = false) => {
+export interface useBooleanReturn {
+    visible: boolean;
+    show: () => void;
+    hide: () => void;
+};
+
+export default (initStatus: boolean = false): useBooleanReturn => {
     const [visible, setVisible] = useState(initStatus);
 
     useEffect(() => {
