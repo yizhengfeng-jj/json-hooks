@@ -1,6 +1,8 @@
 module.exports = {
     roots: ['<rootDir>/src'],
-    setupFiles: [],
+    setupFiles: [
+        '<rootDir>/jest/shim.js'
+    ],
     clearMocks: true,
     collectCoverage: true,
     transform: {
