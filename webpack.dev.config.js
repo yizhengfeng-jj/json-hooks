@@ -42,6 +42,10 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: 'index.html',
             filename: 'index.html'
+        }),
+        require('postcss-flexbugs-fixes'),
+        require('autoprefixer')({
+            flexbox: 'no-2009'
         })
     ]
 };
