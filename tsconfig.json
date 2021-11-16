@@ -10,7 +10,7 @@
     "include": [
         "src/**/*.ts",
         "types"
-    ],
+, "src/stories/useBoolean.stories.tsx", "src/stories/Button.tsx"    ],
     "exclude": [
         "src/**/*.test.ts"
     ],
